@@ -1,1 +1,3 @@
-./mac_changer.py -i (interface) -m (desired mac address)
+Simple code to change MAC address temporarily.
+
+use: ./mac_changer.py -i (interface) -m (desired mac address)
