@@ -10,9 +10,9 @@ def get_arguments():
     parser.add_option("-m", "--mac", dest="new_mac", help="New MAC address")
     (options, arguments) = parser.parse_args()
     if not options.interface:
-        parser.error("[-] AHHH wrong interface bitch, use --help for more info dumbass bitch")
+        parser.error("[-] invalid interface, use --help for more info")
     elif not options.new_mac:
-        parser.error("[-] AHHH wrong mac bitch, use --help for more info dumbass bitch")
+        parser.error("[-] invalid mac, use --help for more info")
     return options
 
 def change_mac(interface, new_mac):
